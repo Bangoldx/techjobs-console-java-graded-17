@@ -96,10 +96,10 @@ public class JobData {
 
         for (HashMap<String, String> row : allJobs) {
             for (Map.Entry<String, String> job : row.entrySet()) {
-                if (job.getValue().toLowerCase().contains(value.toLowerCase())) {
-                    if (!jobs.contains(row)) {
+                if (job.getValue().toLowerCase().contains(value.toLowerCase()) && !jobs.contains(row)) {
+//                    if (!jobs.contains(row)) {
                         jobs.add(row);
-                    }
+//                    }
                 }
             }
         }
