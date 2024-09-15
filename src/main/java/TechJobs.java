@@ -122,7 +122,7 @@ public class TechJobs {
         if (someJobs.isEmpty()) {
             System.out.print("No Results");
         } else {
-        for (int i = 0; i < someJobs.size(); i++) {
+            for (int i = 0; i < someJobs.size(); i++) {
                 System.out.println("\n*****");
                 for (Map.Entry<String, String> job : someJobs.get(i).entrySet()) {
                     System.out.println(job.getKey() + ": " + job.getValue());
